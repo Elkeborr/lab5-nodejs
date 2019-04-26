@@ -6,14 +6,14 @@ const message = require('../models/message');
 // GET
 let get = ('/messages',(req,res,next)=>{
 
- message.find({},(err, docs)=>{
+
       
   res.json({
       "status": "YES 🤯",
      "message":"GETTING messages"
     })
   
-    });
+
     
     });
 
@@ -23,7 +23,7 @@ module.exports.get=get;
 
 let getid = ('/messages/:id',(req,res,next)=>{
   const id = message.find(req.params.id);
-  message.find({},(err, docs)=>{
+
  
   res.json({
     "status": "YES 🤯",
@@ -31,7 +31,7 @@ let getid = ('/messages/:id',(req,res,next)=>{
       "messages": "GETTING message with ID "  + req.params.id
     
   })
-  });
+
   
   });
 
@@ -99,14 +99,14 @@ let getUsername =('/messages?user=username',(req,res)=>{
 
   const username = message.find(req.params.user);
 
-  message.find({},(err, docs)=>{
+
   res.json ({
     "status": "success", 
     "message": "GETTING message for username " + req.params.user
 
   });
 
-  });
+
     
 });
 module.exports.getUsername=getUsername;
