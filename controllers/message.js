@@ -67,7 +67,7 @@ let user = req.body.user;
 
     res.json ({
       "status":"YES 📤",
-      "messages": "UPDATE message with ID "  + //req.params.id
+      "messages": "UPDATE message with ID "  //+ req.params.id
     })
    
 });
@@ -81,7 +81,7 @@ let remove =('/messages/:id',(req,res)=>{
 
   res.json ({
     "status": "success", 
-    "message": "DELETING a message with ID " + //req.params.id
+    "message": "DELETING a message with ID " //+ req.params.id
   });
 
 
@@ -99,7 +99,7 @@ let getUsername =('/messages?user=username',(req,res)=>{
 
   res.json ({
     "status": "success", 
-    "message": "GETTING message for username " + req.params.user
+    "message": "GETTING message for username " //+ req.params.user
 
   });
 
