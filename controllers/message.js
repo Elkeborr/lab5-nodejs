@@ -2,9 +2,8 @@
 // contact leggen met models => message
 const message = require('../models/message');
 
-var express = require('express')
-var cors = require('cors')
-var app = express()
+
+
 
 // GET
 let get = ('/messages',(req,res,next)=>{
