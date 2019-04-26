@@ -81,7 +81,7 @@ let remove =('/messages/:id',(req,res)=>{
   //const id = message.find(req.params.id);
 
   res.json ({
-    "status": "success", 
+    "status": " ❌ success", 
     "message": "DELETING a message with ID " //+ req.params.id
   });
 
@@ -93,14 +93,14 @@ module.exports.remove=remove;
 
 //GET-USERNAME
 
-let getUsername =('/messages?user=username',(req,res)=>{
+let getUsername =('/messages?user=pikachu',(req,res)=>{
 
   const username = message.find(req.params.user);
 
 
   res.json ({
-    "status": "success", 
-    "message": "GETTING message for username " //+ req.params.user
+    "status": " 🐥 success", 
+    "message": "GETTING message for pikachu " //+ req.params.user
 
   });
 
