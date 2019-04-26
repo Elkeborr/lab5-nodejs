@@ -5,9 +5,6 @@ const message = require('../models/message');
 
 // GET
 let get = ('/messages',(req,res,next)=>{
-
-
-      
   res.json({
       "status": "YES 🤯",
      "message":"GETTING messages"
@@ -22,13 +19,13 @@ module.exports.get=get;
 // GET:ID
 
 let getid = ('/messages/:id',(req,res,next)=>{
-  const id = message.find(req.params.id);
+  //const id = message.find(req.params.id);
 
  
   res.json({
     "status": "YES 🤯",
     
-      "messages": "GETTING message with ID "  + req.params.id
+      "messages": "GETTING message with ID "  //+ req.params.id
     
   })
 
@@ -63,14 +60,14 @@ module.exports.post=post;
 
 let put =('/messages/:id',(req,res)=>{
 
-const id = message.find(req.params.id);
+//const id = message.find(req.params.id);
 
 let nieuw_text = req.body.text;
 let user = req.body.user;
 
     res.json ({
       "status":"YES 📤",
-      "messages": "UPDATE message with ID "  + req.params.id
+      "messages": "UPDATE message with ID "  + //req.params.id
     })
    
 });
@@ -80,11 +77,11 @@ module.exports.put=put;
 
 let remove =('/messages/:id',(req,res)=>{
 
-  const id = message.find(req.params.id);
+  //const id = message.find(req.params.id);
 
   res.json ({
     "status": "success", 
-    "message": "DELETING a message with ID " + req.params.id
+    "message": "DELETING a message with ID " + //req.params.id
   });
 
 
