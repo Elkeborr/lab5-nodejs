@@ -1,6 +1,8 @@
 
 // contact leggen met models => message
 const message = require('../models/message');
+var cors = require('cors');
+app.use(cors());
 
 
 // GET
@@ -24,7 +26,6 @@ let getid = ('/messages/:id',(req,res,next)=>{
  
   res.json({
     "status": "YES 🤯",
-    
       "messages": "GETTING message with ID "  //+ req.params.id
     
   })
